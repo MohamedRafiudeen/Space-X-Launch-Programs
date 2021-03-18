@@ -12,7 +12,6 @@ function fetchData() {
     })
     .then((value) => {
       launches = value;
-      console.log("launches:", launches);
     })
     .then(() => {
       //display filter years(hard coded)
@@ -103,11 +102,9 @@ function filterByYear(e) {
 
 // upon launch_success filter
 function filterBylaunchSuccess(e) {
-  console.log(e,e.value);
+ 
   launch_success = e.value ? e.value : false;
-  console.log("launch success clicked: ", launch_success, year);
-  console.log(year)
-//   filter(this.year,this.launch_success);
+ 
 
   const buttons = document.querySelectorAll('.sLaunch')
   buttons.forEach( ele => {
@@ -126,7 +123,7 @@ filter(year,launch_success)
 
 //fetch data with applied filters
 function filter(year,launch_success) {
-  console.log("launches", year,launch_success, launches);
+  
   fetch(
     `https://api.spaceXdata.com/v3/launches/?limit=100&launch_year=${year}&launch_success=${launch_success}`
   )
@@ -134,9 +131,7 @@ function filter(year,launch_success) {
       return res.json();
     })
     .then((value) => {
-      console.log("sort by year:", value);
       launches = value;
-      console.log("launches", year, launch_success, launches);
 
       //display the fetched data in view
       var cardContainer = document.querySelector(".cardContainer");
