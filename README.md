@@ -1,6 +1,6 @@
 # Space-X-Launch-Programs
 
-   **A vanilla js app to display the various Space-X launch programmes. 
+   * A vanilla js app to display the various Space-X launch programmes. 
 
 Tools used
 ==========
@@ -17,7 +17,7 @@ Description:
     * The user shall be able to filter the results according to the the 'YEAR OF LAUNCH' and on the basis of 'LAUNCH SUCCESS'.
 
 
-Note
-====
+Note:
+=====
   
    The API response generated, doesn't provide the 'LANDING SUCCESS' status. Hence, that particular filter has been avoided.
