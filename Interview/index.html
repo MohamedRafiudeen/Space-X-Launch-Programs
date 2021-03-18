@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="stylesheet" href="./styles/filters.css" />
+        <link rel="stylesheet" href="./styles/cards.css" />
+        <script src="./main.js"></script>
+        <title>Space-X Launch Programs</title>
+
+    </head>
+    <body>
+        <header>
+            <h2>Space-X Launch Programs</h2>
+        </header>
+
+        <div class="container">
+            <div class="filters">
+                <h2>Filters</h2>
+                <div class="fYear">
+                    <div class="fType">
+                        <h3>Launch Year</h3>
+                    </div>
+                    <hr>
+                    <ul class="yrs">
+                    </ul>
+                </div>
+                <div class="fSuccesLaunch">
+                    <div class="fType">
+                        <h3>Successful Landing</h3>
+                    </div>
+                    <hr>
+                    <button onclick="filterBylaunchSuccess(this)" value="true" class="sLaunch">Yes</button>
+                    <button onclick="filterBylaunchSuccess(this)" value="false" class="sLaunch">No</button>
+                </div>
+            </div>
+            <div class="cardContainer"></div>
+            
+        </div>
+
+        <footer>
+            <h3>Developed by:
+            <span>Mohammed Rafiudeen S</span>
+        </h3>
+        </footer>
+    </body>
+</html>

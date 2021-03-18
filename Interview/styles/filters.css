@@ -1,0 +1,88 @@
+
+.filters{
+    position: relative;
+    height: 100%;
+    min-width: 20%;
+    background-color:rgb(71, 128, 44);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters > h2,h3{
+    color: rgb(134, 207, 164);
+}
+
+
+.yearsList{
+    list-style-type: none;
+}
+
+.fSuccesLaunch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fType{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+hr{
+    width: 80%;
+}
+
+
+
+
+button{
+    color: black;
+    background-color: rgb(106,177,135);
+    border: 0px;
+    margin: 5% 5%;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    color:black;
+    background-color: white;
+}
+
+.active{
+    cursor: pointer;
+    color:black;
+    background-color: white;
+    border: none;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .filters{
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .filters{
+        height: 100%;
+        width: 40%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+}

@@ -1,0 +1,89 @@
+body{
+    margin: 0px 0px;
+}
+header{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    margin: 0px auto;
+}
+
+.container{
+    position: relative;
+    height: 80%;
+    max-width: 100%;
+    background-color: pink;
+    display: flex;
+}
+
+.filters{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    background-color: rgb(207, 146, 156);
+}
+
+.cardContainer{
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background-color:grey;
+    overflow: scroll;
+    display:grid;
+    justify-content: space-around;
+    grid-template-columns: 50px 40px 120px;
+    z-index: 0.9;
+}
+
+.card{
+    position: relative;
+    height: 360px;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: #fff;
+    margin: 40px 0px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > *{
+    margin: 4% 0px;
+}
+
+img{
+    height: 40%;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.title, span{
+    color: blue;
+}
+
+button{
+    color: white;
+    background-color: violet;
+    border: 0px;
+    margin: 5% 5%;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    color:violet;
+    background-color: white;
+}
+
+.yearsList{
+    list-style-type: none;
+}

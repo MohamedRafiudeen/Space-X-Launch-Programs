@@ -1,0 +1,77 @@
+body{
+    margin: 0px 0px;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+    background-color: #fff;
+}
+
+body > * ::-webkit-scrollbar {
+    display: none;
+  }
+
+body > *{
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+header{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(106,177,135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h2{
+    margin: 0px auto;
+}
+
+footer{
+    position: relative;
+    height: 40px;
+    background-color:rgb(106,177,135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > h3{
+    display: inline-block;
+    color: black;
+}
+
+.masterBox{
+    border-radius: 30px;
+}
+
+.container{
+    position: relative;
+    height: 90%;
+    max-width: 100%;
+    background-color: pink;
+    display: flex;
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.errMsg{
+    position: relative;
+    height: 100px;
+    width: 400px;
+    margin: 0px auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+}

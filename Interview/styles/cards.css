@@ -1,0 +1,97 @@
+
+
+.cardContainer{
+    position: relative;
+    height: 100%;
+    min-width: 80%;
+    background-color:rgba(255, 255, 255, 0.89);
+    overflow: scroll;
+    display:grid;
+    justify-content:space-evenly;
+    grid-template-columns:100px 100px 100px 120px;
+    z-index: 0.9;
+}
+
+.card{
+    position: relative;
+    height: 360px;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: #fff;
+    border: 4px solid rgb(106,177,135);
+    box-shadow: 2px 2px 15px  black;
+    margin: 20% 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > *{
+    margin: 5% 0px;
+}
+
+img{
+    height: 40%;
+    width: 80%;
+}
+
+.title, span{
+    color: blue;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .cardContainer{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0.9;
+    }
+
+    .card{
+        position: relative;
+        height: 460px;
+        min-width: 80%;
+        max-width: 80%;
+        background-color: #fff;
+        margin: 40px 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+    .cardContainer{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        display:grid;
+        grid-template-columns: 150px 200px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0.9;
+    }
+
+    .card{
+        position: relative;
+        height: 360px;
+        min-width: 200px;
+        max-width: 200px;
+        background-color: #fff;
+        margin: 40px 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
