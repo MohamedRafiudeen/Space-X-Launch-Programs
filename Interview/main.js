@@ -70,14 +70,6 @@ function fetchData() {
         sLauch.classList.add("sLauch");
         sLauch.textContent = ele.launch_success;
 
-        //display Successful landing:
-        var successfulLanding = document.createElement("h4");
-        successfulLanding.classList.add("successfulLanding");
-        successfulLanding.textContent = "Successful Landing: ";
-
-        var sLand = document.createElement("span");
-        sLand.classList.add("sLand");
-        sLand.textContent = ele.launch_landing;
 
         cardContainer.appendChild(card);
         card.appendChild(img);
@@ -88,8 +80,6 @@ function fetchData() {
         missionIds.appendChild(missionId);
         card.appendChild(successfulLaunch);
         successfulLaunch.appendChild(sLauch);
-        card.appendChild(successfulLanding);
-        successfulLanding.appendChild(sLand);
       });
     })
     .catch((err) => console.log(err));
